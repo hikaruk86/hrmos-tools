@@ -47,7 +47,7 @@ brew install python@3.13
 python -m pip install -r requirements.txt
 
 # Macの場合
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 2. Playwrightブラウザのインストール
@@ -57,7 +57,7 @@ pip install -r requirements.txt
 python -m playwright install chromium
 
 # Macの場合
-playwright install chromium
+python3 -m playwright install chromium
 ```
 
 3. 環境変数の設定
@@ -94,11 +94,15 @@ BROWSER_SLOW_MO=100
 ## 使用方法
 
 ```bash
-# 通常の実行
+# Windowsの場合
 python hrmos_auto_input.py
-
-# 特定の年月を指定して自動入力
+# 年月指定の場合
 python hrmos_auto_input.py --year-month 2026-07
+
+# Macの場合
+python3 hrmos_auto_input.py
+# 年月指定の場合
+python3 hrmos_auto_input.py --year-month 2026-07
 ```
 
 ## 注意事項
